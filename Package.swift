@@ -5,6 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "APHelperKit",
+    platforms: [
+        .iOS(.v12),
+        .macOS(.v10_15),
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -12,7 +16,7 @@ let package = Package(
             targets: ["APHelperKit"]),
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
+        // .package(url: "http://", from: "1.0.0"),
         // .package(url: /* package url */, from: "1.0.0"),
     ],
     targets: [
