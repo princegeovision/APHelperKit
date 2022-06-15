@@ -13,7 +13,7 @@ public struct APHelperKit {
 
 
 @objc
-class APHelperObjC: NSObject {
+public class APHelperObjC: NSObject {
     
     @objc var version = APHelperKit().version
     @objc override init() {
