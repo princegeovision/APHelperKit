@@ -1,3 +1,5 @@
+import Foundation
+
 public struct APHelperKit {
     //default from creation.
     var text = "Hello, World!"
@@ -7,3 +9,15 @@ public struct APHelperKit {
     public init() { }
     
 }
+
+
+
+@objc
+class APHelperObjC: NSObject {
+    
+    @objc var version = APHelperKit().version
+    @objc override init() {
+
+    }
+}
+
